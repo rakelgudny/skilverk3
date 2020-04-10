@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head></html>
+	<title>login</title>
+	<meta charset="utf-8"/>
+	
+</head>
+<body>
+
+	<br>
+	Login
+	<input type="text" id="pw">
+	<button id="btn">Ok</button>
+	
+	<script type="text/javascript">
+				
+		var password = "12345";
+		var check = function(e) {			
+			if ((e.type === 'keypress' && e.keyCode === 13) || e.type === 'click') 
+			{
+				var lykilord = document.getElementById("pw").value;
+				if (lykilord == "12345")
+				{
+					window.location.href = "index.html"
+				}
+				else scope.redirect = function(){
+  					$location.url('/index.html');
+				
+				{
+					alert("Þú hefur ekki aðgang!");
+				}
+			}
+		}
+		document.getElementById("pw").addEventListener('keypress', check);
+		document.getElementById("btn").addEventListener('click', check);
+		
+		
+
+	</script>
+</body>
